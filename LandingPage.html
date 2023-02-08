@@ -8,26 +8,17 @@
     <script src="utils/PageManager.js"></script>
 </head>
 <body>
-    <style>
-        .textbox {
-            width: 300px;
-            height: 50px;
-            border-radius: 10px;
-            border: 2px solid gray;
-            padding: 10px;
-            font-size: 16px;
-        }
-    </style>
+    <div id="SignInPage"></div>
 <!-- Landing Page Div which contains 2 buttons made from images -->
     <div id="LandingPage">
         <input type="image" src="img/user_accounts_alt.png" title="Sign in or Register an Account"
             onclick="
-                divFadeOut('LandingPage');
                 createSignIn();
-            "
-        />
+                divFadeOut('LandingPage');
+                divFadeIn('SignInPage');
+            "/>
+        <label class="landingLabel">Sign in</label>
     </div>
-    <div id="SignInPage"></div>
 </body>
 <script>
 

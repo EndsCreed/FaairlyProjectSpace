@@ -18,6 +18,8 @@ body {
 /* Positioning for the entire div responsible for the icon buttons. */
 #LandingPage {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 4vmin;
     position: absolute;
     left: 50%;
@@ -27,19 +29,57 @@ body {
 }
 
 #SignInPage {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
     left: 50%;
-    top: 50%;
+    top: 150%;
     transform: translate(-50%, -50%);
+    gap: 2vmin;
+    position: absolute;
 }
 
-#SignInPage > input[type="textbox"] {
-    width: 50vw;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px solid gray;
-    padding: 10px;
+.register-btn {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
     font-size: 16px;
+}
+
+.signInTextBox {
+    width: 30%;
+    min-width: 100px;
+    height: auto;
+    border-radius: 4px;
+    border-color: darkblue;
+    padding: 4px;
+    font-size: 16px;
+    font-family: fantasy;
+    text-align: center;
+    background-color: darkslategray;
+}
+
+.signInLabel {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    color: cadetblue;
+}
+
+.landingLabel {
+    width: auto;
+    height: 35px;
+    font-size: 26px;
+    font-family: fantasy;
+    text-align: right;
+    color: coral;
+    padding: 5px;
 }
