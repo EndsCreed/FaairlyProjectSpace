@@ -1,0 +1,45 @@
+/* Main page settings */
+body {
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Styling for each individual input class */
+#LandingPage > input {
+    width: 15vmax;
+    height: 15vmax;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Positioning for the entire div responsible for the icon buttons. */
+#LandingPage {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: top;
+}
+
+#SignInPage {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#SignInPage > input[type="textbox"] {
+    width: 50vw;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 10px;
+    font-size: 16px;
+}
