@@ -4,10 +4,6 @@ body {
     width: 100vh;
     margin: 0;
     overflow: hidden;
-    /*
-    background-image: url(../img/background.jpg);
-    background-size: 110%;
-    */
     transition: top 0.5s ease-in-out;
 }
 
@@ -105,7 +101,7 @@ body {
     position: fixed;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
-    background-size: 105% auto;
+    background-size: 150%;
     background-position: center;
     top: 0;
     left: 0;

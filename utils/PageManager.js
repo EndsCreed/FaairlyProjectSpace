@@ -27,6 +27,8 @@ function createSignIn() {
     window.addEventListener("keydown", function(event) {
         if ((event.key === "Escape" || event.code === "Escape")) {
             divFadeOut('SignInPage');
+            document.getElementById("background-image").style.backgroundPosition = "center";
+            document.getElementById("background-overlay").style.backgroundColor = "rgba(0,0,0,50%)";
             divFadeIn('LandingPage');
         }
     });
