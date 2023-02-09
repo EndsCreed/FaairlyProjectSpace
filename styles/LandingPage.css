@@ -2,9 +2,13 @@
 body {
     height: 100vh;
     width: 100vh;
-    background-color: black;
     margin: 0;
     overflow: hidden;
+    /*
+    background-image: url(../img/background.jpg);
+    background-size: 110%;
+    */
+    transition: top 0.5s ease-in-out;
 }
 
 /* Styling for each individual input class */
@@ -25,7 +29,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: top;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 #SignInPage {
@@ -41,6 +45,7 @@ body {
     transform: translate(-50%, -50%);
     gap: 2vmin;
     position: absolute;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .register-btn {
@@ -82,4 +87,29 @@ body {
     text-align: right;
     color: coral;
     padding: 5px;
+}
+
+.background-overlay {
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(7px);
+}
+
+.background-image {
+    transition: background-position 0.5s ease-in-out;
+    position: fixed;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 105% auto;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
