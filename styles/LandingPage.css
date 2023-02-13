@@ -61,7 +61,7 @@ body {
     border-color: darkblue;
     padding: 4px;
     font-size: 16px;
-    font-family: fantasy;
+    font-family: fangsong;
     text-align: center;
     background-color: darkslategray;
 }
@@ -70,7 +70,7 @@ body {
     width: auto;
     height: auto;
     font-size: 20px;
-    font-family: serif;
+    font-family: fangsong;
     text-align: center;
     color: cadetblue;
 }
@@ -79,7 +79,7 @@ body {
     width: auto;
     height: 35px;
     font-size: 26px;
-    font-family: fantasy;
+    font-family: fangsong;
     text-align: right;
     color: coral;
     padding: 5px;
